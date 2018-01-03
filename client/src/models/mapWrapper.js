@@ -206,6 +206,7 @@ MapWrapper.prototype.distanceMatrix = function(origin, destination, response){
     if (status == "OK") {
       var origins = response.originAddresses;
       var destinations = response.destinationAddresses;
+      console.log(origins);
 
       for (var i = 0; i < origins.length; i++) {
         var results = response.rows[i].elements;
@@ -224,7 +225,7 @@ MapWrapper.prototype.distanceMatrix = function(origin, destination, response){
     };
     var step =  numSteps / 2;
     var directionInfoWindow = new google.maps.InfoWindow();
-    directionInfoWindow.setContent("Walking:<br>" + distance + "<br>" + duration + " ");
+    directionInfoWindow.setContent("Walking:<br>" + distance + "<br>" + duration);
     directionInfoWindow.setPosition(routeResponse.routes[0].legs[0].steps[step].end_location);
     directionInfoWindow.open(this.mainMap.googleMap);
     this.mainMap.directionInfoWindow.push(directionInfoWindow);

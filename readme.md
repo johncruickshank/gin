@@ -11,34 +11,26 @@
 
 ## Project Specification:
 
-The project implemented a combination of two project specifications:
+### **Gin Discoverer**
 
-###**Route Planner**
-Visit Scotland are looking for ways to encourage people to walk and cycle. Your task is to create an app that allows users to search for cycling and hiking routes, view routes on a map, save routes to a wishlist and mark a route done.
+_"70% of gin in the UK is produced in Scotland"_
+
+Visit Scotland has teamed up with Gin Club Scotland to promote Scotland’s booming Gin industry. They want you to create an app that lists and maps Gin Bars and Distilleries in Scotland.
+
+Users should be able to obtain walking directions to a selected venue from their Geolocation or a location they specify.
 
 You could use GoogleMaps Directions API:
 https://developers.google.com/maps/documentation/directions/
 
-###MVP
-Users should be able to:
+You'll have to build your own API to persist the Bar and Distillery data and use an external API to find addresses and postcodes.
 
-* Select start and finish locations for their route
-* Save routes to a wishlist
-* Mark completed routes as ‘done’
+### MVP:
 
-
-###**Store Finder**
-Global pub giant Withoutaspoon, wants a pub finder that allows users to "Find your nearest store" for their website.
-
-User should be able to enter their postcode or town or street name and get a list of the top ten nearest stores. Each store should have a distance, address, phone number, opening hours and a list of facilities and services (e.g. cash machine, car parking).
-
-You'll have to build your own API to persist the store data and use an external API to find addresses from postcodes.
-
-###MVP
+* A list of venues including the details of the venues
+* A map marking the venues
 * Search by postcode or town or street name
-* A list of stores including the details of the stores
-* A map marking the stores
-* Use Geolocation to allow users to "use current location" to find stores
+* Use Geolocation to allow users to "use current location"
+* Select start and finish locations for their route
 
 ## Project:    
 
